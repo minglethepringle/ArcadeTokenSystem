@@ -1,0 +1,6 @@
+<form>
+    <label class="form-label"># of Tokens to Buy</label>
+    <input class="form-control" type="number" min="1" [(ngModel)]="tokensToBuy" name="tokensToBuy" />
+    <p>Currently, tokens cost {{tokenCost}} per token!</p>
+    <button type="button" class="btn btn-success" (click)="buyTokens()">Buy Tokens</button>
+</form>

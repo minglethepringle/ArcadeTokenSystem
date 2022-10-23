@@ -1,0 +1,16 @@
+<div class="alert alert-primary text-center">
+    <h1>You have {{numTokens}} tokens to spend!</h1>
+    <a routerLink="/shop" class="btn btn-success">Buy Tokens</a>
+</div>
+
+<div class="row">
+    <div class="col-4" *ngFor="let game of listGames">
+        <div class="card mb-3 text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{game.name}}</h5>
+                <p class="card-text">Cost: {{game.cost}} tokens</p>
+                <button class="btn btn-primary px-5" (click)="playGame(game.name, game.cost)">Play</button>
+            </div>
+        </div>
+    </div>
+</div>

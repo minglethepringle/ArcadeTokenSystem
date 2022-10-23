@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="col-3">Date/Time</th>
+            <th class="col-2">Transaction Type</th>
+            <th class="col-2"># of Tokens</th>
+            <th class="col-5">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let transaction of ledger" [class.table-success]="transaction.bought"
+            [class.table-danger]="!transaction.bought">
+            <td>{{transaction.datetime}}</td>
+            <td>{{transaction.bought ? "Bought Tokens" : "Spent Tokens"}}</td>
+            <td>{{transaction.numTokens}}</td>
+            <td>{{transaction.description}}</td>
+        </tr>
+    </tbody>
+</table>

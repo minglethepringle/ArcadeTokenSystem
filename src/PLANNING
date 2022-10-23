@@ -1,0 +1,18 @@
+Token:
+- Cost (float): fixed ($0.25 / token) (global var?)
+
+Game:
+- Name
+- Cost (int): fixed (4 tokens per game)
+
+Ledger (list of transactions). Transaction:
+- BoughtToken/SpentToken (?)
+- Number of tokens (int)
+- Description of action (String)
+
+------------------------
+
+Pages/Modules:
+- Arcade: List of games with token values (shows # tokens)
+- Buy Tokens: Can buy X tokens (shows token cost)
+- Ledger: Shows transaction history

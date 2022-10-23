@@ -1,0 +1,7 @@
+3 additional features that would be useful to implement next for a token tracking system:
+
+1. Persisting the token count and ledger history to a database
+2. With that persisting to the database, adding users and tying their arcade information to their account
+3. Perhaps for the arcade itself, adding a way to track the number of tokens in the machine
+
+And plus, no one buys exactly 53 tokens! If I was the arcade owner, I'd put "Buy X Tokens" buttons to make it easier for users to buy tokens, and have them buy more tokens :)
